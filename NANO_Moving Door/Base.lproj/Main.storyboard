@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NANO_Moving_Door" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="fW9-Ub-z7C">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgy-AF-OnA">
+                                <rect key="frame" x="210" y="462" width="104" height="292"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="door"/>
+                                <connections>
+                                    <action selector="closedDoorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lp4-PP-pjj"/>
+                                    <segue destination="wrk-zc-Po2" kind="show" animates="NO" id="Dw2-yd-IZD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fW9-Ub-z7C" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VDF-XI-gyJ"/>
+                            <constraint firstItem="fW9-Ub-z7C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dzh-kX-iqj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="closedDoor" destination="Wgy-AF-OnA" id="AGn-Ct-mgw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Vbl-5U-lXX">
+            <objects>
+                <viewController id="wrk-zc-Po2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Tp-RM-ziO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhone XR Copy 3" translatesAutoresizingMaskIntoConstraints="NO" id="GDB-Nt-gxt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aF-pe-0Uf">
+                                <rect key="frame" x="210" y="462" width="103" height="292"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="opened_door"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GDB-Nt-gxt" firstAttribute="centerX" secondItem="7Tp-RM-ziO" secondAttribute="centerX" id="CsV-sT-MAv"/>
+                            <constraint firstItem="GDB-Nt-gxt" firstAttribute="centerY" secondItem="7Tp-RM-ziO" secondAttribute="centerY" id="MCY-bE-9ed"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KYl-We-nlO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IdO-8d-Gyy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="grB-HS-eeU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="895.6521739130435" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background1" width="414" height="896"/>
+        <image name="door" width="104" height="292"/>
+        <image name="iPhone XR Copy 3" width="414" height="896"/>
+        <image name="opened_door" width="103" height="292"/>
+    </resources>
+</document>
