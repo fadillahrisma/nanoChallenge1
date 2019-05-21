@@ -12,6 +12,11 @@
 		795136352290F7D500B77DF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795136332290F7D500B77DF8 /* Main.storyboard */; };
 		795136372290F7D600B77DF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 795136362290F7D600B77DF8 /* Assets.xcassets */; };
 		7951363A2290F7D600B77DF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795136382290F7D600B77DF8 /* LaunchScreen.storyboard */; };
+		79AC805C2293859C006322E9 /* soundGirlSinging.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79AC80552293859B006322E9 /* soundGirlSinging.mp3 */; };
+		79AC805F2293859C006322E9 /* backsound_horor_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79AC80582293859C006322E9 /* backsound_horor_1.mp3 */; };
+		79AC80612293859C006322E9 /* soundLidcreak.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79AC805A2293859C006322E9 /* soundLidcreak.mp3 */; };
+		79AC806522939AA6006322E9 /* bellSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79AC806322939AA6006322E9 /* bellSound.mp3 */; };
+		79AC806622939AA6006322E9 /* slamDoor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79AC806422939AA6006322E9 /* slamDoor.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		795136362290F7D600B77DF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		795136392290F7D600B77DF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7951363B2290F7D600B77DF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79AC80552293859B006322E9 /* soundGirlSinging.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = soundGirlSinging.mp3; path = ../../soundGirlSinging.mp3; sourceTree = "<group>"; };
+		79AC80582293859C006322E9 /* backsound_horor_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = backsound_horor_1.mp3; path = ../../backsound_horor_1.mp3; sourceTree = "<group>"; };
+		79AC805A2293859C006322E9 /* soundLidcreak.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = soundLidcreak.mp3; path = ../../soundLidcreak.mp3; sourceTree = "<group>"; };
+		79AC806322939AA6006322E9 /* bellSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bellSound.mp3; path = ../../bellSound.mp3; sourceTree = "<group>"; };
+		79AC806422939AA6006322E9 /* slamDoor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = slamDoor.mp3; path = ../../slamDoor.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,11 @@
 		7951362E2290F7D500B77DF8 /* NANO_Moving Door */ = {
 			isa = PBXGroup;
 			children = (
+				79AC80582293859C006322E9 /* backsound_horor_1.mp3 */,
+				79AC80552293859B006322E9 /* soundGirlSinging.mp3 */,
+				79AC805A2293859C006322E9 /* soundLidcreak.mp3 */,
+				79AC806322939AA6006322E9 /* bellSound.mp3 */,
+				79AC806422939AA6006322E9 /* slamDoor.mp3 */,
 				7951362F2290F7D500B77DF8 /* AppDelegate.swift */,
 				795136312290F7D500B77DF8 /* ViewController.swift */,
 				795136332290F7D500B77DF8 /* Main.storyboard */,
@@ -122,7 +137,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79AC805C2293859C006322E9 /* soundGirlSinging.mp3 in Resources */,
+				79AC805F2293859C006322E9 /* backsound_horor_1.mp3 in Resources */,
+				79AC806522939AA6006322E9 /* bellSound.mp3 in Resources */,
+				79AC806622939AA6006322E9 /* slamDoor.mp3 in Resources */,
 				7951363A2290F7D600B77DF8 /* LaunchScreen.storyboard in Resources */,
+				79AC80612293859C006322E9 /* soundLidcreak.mp3 in Resources */,
 				795136372290F7D600B77DF8 /* Assets.xcassets in Resources */,
 				795136352290F7D500B77DF8 /* Main.storyboard in Resources */,
 			);
