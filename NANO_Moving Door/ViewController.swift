@@ -74,7 +74,7 @@ class ViewController: UIViewController {
     }
     
     func animateCloseDoor(imageView: UIImageView, images: [UIImage]) {
-        imageView.animationDuration = 0.4
+        imageView.animationDuration = 0.2
         imageView.animationRepeatCount = 1
         imageView.animationImages = images
         imageView.startAnimating()
@@ -87,8 +87,8 @@ class ViewController: UIViewController {
         // saat pertama aplikasi dibuka, maka jalankan animasi pintu terbuka
         if numberOfClick == 0 {
             playLidCreak()
-            animate(imageView: doorImageView, images: openDoorImages)
-            doorImageView.image = UIImage(named: "frame_7")
+            animate(imageView: doorImageView, images: closeDoorImages)
+            doorImageView.image = UIImage(named: "close_7")
             let generator = UIImpactFeedbackGenerator(style: .heavy)
             generator.prepare()
             generator.impactOccurred()
@@ -98,21 +98,21 @@ class ViewController: UIViewController {
         // jika animasi pintu terbuka sudah dijalankan, maka tap berikutnya jalankan animasi menjauh
         else if numberOfClick == 1 {
             playBellSound()
-            animate(imageView: doorImageView, images: scaleDoorImages)
-            doorImageView.image = UIImage(named: "scale_7")
+            animate(imageView: doorImageView, images: farDoorImages)
+            doorImageView.image = UIImage(named: "far_7")
             
             numberOfClick = 2
         } else if numberOfClick == 2 {
             playGirlSinging()
-            animate(imageView: doorImageView, images: farDoorImages)
-            doorImageView.image = UIImage(named: "far_7")
+            animate(imageView: doorImageView, images: scaleDoorImages)
+            doorImageView.image = UIImage(named: "scale_7")
             
             numberOfClick = 3
         } else {
             playSlamDoor()
             //backsoundPlayer?.stop()
-            animateCloseDoor(imageView: doorImageView, images: closeDoorImages)
-            doorImageView.image = UIImage(named: "close_7")
+            animateCloseDoor(imageView: doorImageView, images: openDoorImages)
+            doorImageView.image = UIImage(named: "frame_7")
             AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
         }
 
